@@ -1,0 +1,266 @@
+.appjobcan .filter-serch-firstrow {
+    padding-top: unset !important;
+}
+.appjobcan .heading-candidates {
+    color: var(--Deeesha-Blue, #175DA8);
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+}
+/* .job-header-wrapper {
+    width: 100%;
+    padding: 20px 112px;
+    background: #E5F2FF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+} */
+.alljoblink {
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    padding: 10px 112px;
+    box-sizing: border-box;
+}
+.alljoblink a {
+    color: #888;
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    gap: 5px;
+}
+.job-title {
+    color: var(--Deeesha-Blue, #175DA8);
+    font-size: 24px;
+    font-weight: 600;
+    display: inline-block;
+}
+.job-status {
+    padding: 5px 20px;
+    background: #D9EED8;
+    border-radius: 30px;
+    border: 0.8px solid #0B8000;
+    color: #0B8000;
+    font-size: 13.66px;
+    font-weight: 600;
+}
+.job-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.location {
+    color: black;
+    font-size: 15px;
+    font-family: Poppins;
+    font-weight: 500;
+    word-wrap: break-word
+}
+.icon-location {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url('../assets/weui_location-filled.svg') no-repeat center center;
+    background-size: contain;
+}
+.details-link {
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: underline;
+    text-transform: lowercase;
+    word-wrap: break-word;
+    display: flex;
+}
+.details-link .arrow {
+    display: inline-block;
+    width: 24px;
+    height: 21px;
+    background-image: url('../assets/iconamoon_arrow-up-2-light.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.jobdet-link {
+    background-image: url('../assets/system-file-manager-symbolic_svgrepo.com.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+.alljoblink .roletit {
+    color: #000;
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 400;
+}
+.job-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.edit-btn {
+    background: none;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: #323232;
+}
+.icon-btn {
+    width: 32px;
+    height: 32px;
+    background: #fff;
+    border-radius: 6.8px;
+    box-shadow: 0 0.57px 4.55px rgba(0, 0, 0, 0.24);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+.icon-btn:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+    background-color: #d3d3d3;
+}
+.icon-btn i {
+    width: 14px;
+    height: 14px;
+    background: black;
+}
+.icon-btn.dots span {
+    width: 3px;
+    height: 3px;
+    background: black;
+    border-radius: 50%;
+    margin: 2px;
+}
+.mobresappjob {
+    display: none;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .job-header-wrapper {
+        padding: 20px 53px;
+    }
+    .alljoblink {
+        padding: 20px 53px;
+    }
+    .job-status {
+        padding: 4px 18px;
+        font-size: 11.66px;
+    }
+    .job-title {
+        font-size: 20px;
+    }
+    .icon-location {
+        width: 18px;
+        height: 18px;
+    }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+    .desresappjob {
+        display: none;
+    }
+    .mobresappjob .job-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .mobresappjob .editbtns {
+        display: flex;
+        gap: 7px;
+        margin-top: 2%;
+        align-items: center;
+    }
+    .mobresappjob .location {
+        width: 100%;
+    }
+    .mobresappjob .job-actions {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .details-link .arrow {
+        width: 21px;
+        height: 21px;
+    }
+}
+
+@media (max-width: 480px) {
+    .desresappjob {
+        display: none;
+    }
+    .mobresappjob .job-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .mobresappjob .editbtns {
+        display: flex;
+        gap: 7px;
+        margin-top: 2%;
+        align-items: center;
+    }
+    .mobresappjob .location {
+        width: 100%;
+        font-size: 12px !important;
+    }
+    .mobresappjob .job-actions {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .details-link .arrow {
+        width: 18px;
+        height: 18px;
+    }
+    .job-title {
+        font-size: 18px;
+    }
+    .edit-btn,
+    .morebtn {
+        font-size: 12px !important;
+    }
+    .details-link {
+        font-size: 12px !important;
+    }
+    .job-header-wrapper,
+    .alljoblink {
+        padding: 20px 5%;
+    }
+    .icon-location {
+        width: 17px;
+        height: 17px;
+    }
+    .job-status {
+        padding: 5px 17px;
+        border-radius: 14px;
+        font-size: 11px;
+    }
+    .icon-btn img {
+        width: 15px;
+        height: 15px;
+    }
+    .icon-btn {
+        width: 27px;
+        height: 27px;
+    }
+    .alljoblink a,
+    .alljoblink .roletit {
+        font-size: 14px;
+    }
+    .jobdet-link {
+        width: 18px;
+        height: 18px;
+    }
+}

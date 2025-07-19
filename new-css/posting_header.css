@@ -1,0 +1,406 @@
+/* new 25-06-2025 new posting_header.php style  */
+.profile-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.finploy-contact .btn {
+    font-size: 13px;
+}
+
+.finploy-contact {
+    font-size: 13px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.users-btn {
+    color: #175DA8;
+    font-family: 'Poppins';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#employer-login-mobile,
+#partner-login-mobile {
+    font-weight: 600 !important;
+}
+
+/* Candidate Login button default style */
+#candidate-login-btn:hover {
+    background-color: transparent !important;
+    border: 1px solid #198754 !important;
+    color: #198754 !important;
+}
+
+/* When hovering over employer/partner login, make candidate login a normal text */
+.nav-item:hover~.nav-item .btn-success {
+    background-color: transparent !important;
+    color: #175DA8 !important;
+    font-weight: 600 !important;
+    border: transparent !important;
+}
+
+/* Styling for the hover effect */
+.icon-link {
+    /* position: relative; */
+    white-space: nowrap;
+}
+
+.icon-text {
+    display: inline-block;
+    margin-left: 10px;
+    opacity: 0;
+    max-width: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    color: #175DA8;
+    font-weight: 500;
+}
+
+.icon-link:hover .icon-text {
+    opacity: 1;
+    max-width: 120px;
+    /* Adjust based on your longest text */
+}
+
+.nav-link.side-link:hover {
+    background: transparent !important;
+    color: #175DA8 !important;
+    /* font-weight: 600; */
+}
+
+/* sakthi */
+.nav-item .nav-right:hover {
+    outline: 1px solid #198754;
+    /* Bootstrap success color */
+    color: #198754 !important;
+    /* padding: 5px 15px; */
+    border-radius: 5px;
+}
+
+#candidate-login-btn {
+    background-color: #198754;
+    /* Bootstrap success color */
+    color: white;
+    padding: 7px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.nav-link:hover {
+    background: transparent !important;
+    color: #175DA8 !important;
+}
+
+/* sesha  */
+/* .left-side-nav {
+    margin-left: 20px;
+} */
+
+
+
+.m-3.left-side-links-emp-head {
+    margin: 0 !important;
+    margin-right: 26px !important;
+
+}
+
+.left-side-links-emp-head .nav-link.side-link.active {
+    color: #175DA8 !important;
+    font-weight: 600;
+}
+
+.nav-link.login-link-separator {
+    cursor: default;
+}
+
+.nav-link.icon-link.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    /* z-index: 999; */
+    cursor: pointer;
+    margin-bottom: 90px;
+}
+
+.nav-link.icon-link.whatsapp-float img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+}
+
+.nav-link.icon-link.whatsapp-float img:hover {
+    transform: scale(1.1);
+}
+
+.nav-link.icon-link.tel-float {
+    position: fixed;
+    bottom: 20px;
+    right: 12px;
+    /* z-index: 999; */
+    cursor: pointer;
+}
+
+.nav-link.icon-link.tel-float img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+}
+
+.nav-link.icon-link.tel-float img:hover {
+    transform: scale(1.1);
+}
+
+.nav-link.btn.post-job-btn-header {
+    border-radius: 8px!important;
+    background-color: #4EA647!important;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.24)!important;
+    font-weight: 600!important;
+    color: #FFFFFF!important;
+    width: 134px!important;
+    padding-left: 18px!important;
+}
+.nav-link.btn.post-job-btn-header:hover {
+    border-radius: 8px !important;
+    background-color: #4EA647 !important;
+    box-shadow:0px 1px 8px 0px rgb(0 0 0 / 49%)!important;
+    font-weight: 600 !important;
+    color: #FFFFFF !important;
+    width: 134px !important;
+    padding-left: 18px !important;
+}
+
+#cart-count {
+    background-color: #175DA8;
+    margin-left: 0px !important;
+    padding: 2px 4px !important;
+    border: none;
+    font-size: 10px;
+    font-weight: 600;
+    border-radius: 50% !important;
+    margin-left: -12px !important;
+    top: 13px;
+}
+
+.postjob-btn {
+    margin: 0 20px 0 20px !important;
+}
+
+.profile-desk {
+    width: 32px;
+    height: 32px;
+    background-color: #175DA8;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 15px;
+    vertical-align: middle;
+    /* margin-top: -5px; */
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+.cart-mobile {
+    display: none !important;
+}
+
+.postjob-mobile {
+    display: none !important;
+}
+
+.collapse.navbar-collapse {
+    margin-left: -88px;
+}
+
+.left-side-nav-emp-head {
+    margin-left: 88px;
+}
+
+/* media qurey  */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1130px;
+    }
+}
+@media (max-width: 439.98px) {
+    .nav-link.btn.post-job-btn-header {
+ 
+
+    width: 106px !important;
+    padding-left: 8px !important;
+            margin-left: 0px !important;
+    }
+
+    .navbar-brand img {
+        height: 30px;
+    }
+
+
+}
+
+@media (max-width: 575.98px) {
+    .navbar-toggler.bar-web {
+        display: none !important;
+    }
+
+    .cart-web {
+        display: none !important;
+    }
+
+    .postjob-web {
+        display: none !important;
+    }
+
+    .cart-mobile {
+        display: block !important;
+    }
+
+    .postjob-mobile {
+        display: block !important;
+    }
+
+    .d-flex.justify-content-between.align-items-center.mb-3 {
+        display: none !important;
+    }
+
+    #candidate-list {
+        margin-top: 20px !important;
+    }
+
+    .profile-icon-device {
+        margin-right: -11px !important;
+        margin-bottom: -7px !important;
+    }
+
+    .navbar-expand-lg>.container {
+                padding: 0px 10px !important;
+    }
+    .m-3.left-side-links-emp-head {
+        margin: 0 !important;
+              margin-left: -30px !important;
+
+
+    }
+
+     .nav-link {
+        padding: 8px 8px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .navbar-toggler.bar-web {
+        display: none !important;
+
+    }
+
+    .cart-web {
+        display: none !important;
+    }
+
+    .postjob-web {
+        display: none !important;
+    }
+
+    .cart-mobile {
+        display: block !important;
+    }
+
+    .postjob-mobile {
+        display: block !important;
+    }
+
+    .d-flex.justify-content-between.align-items-center.mb-3 {
+        display: none !important;
+    }
+
+    #candidate-list {
+        margin-top: 20px !important;
+    }
+
+    .profile-icon-device {
+        margin-right: -11px !important;
+        margin-bottom: -7px !important;
+    }
+     .nav-link {
+        padding: 0.5rem 1rem;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .profile-icon-device {
+        margin-right: -11px !important;
+        margin-bottom: -7px !important;
+    }
+
+    .navbar-toggler {
+        /* margin-right: -400px !important; */
+    }
+
+    .navbar-toggler.bar-web {
+        display: none !important;
+    }
+
+    .cart-web {
+        display: none !important;
+    }
+
+    .postjob-web {
+        display: none !important;
+    }
+
+    .cart-mobile {
+        display: block !important;
+    }
+
+    .postjob-mobile {
+        display: block !important;
+    }
+ .nav-link {
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .m-3.left-side-links-emp-head {
+        margin: 0 !important;
+        margin-right: 0px !important;
+
+    }
+
+    .navbar-nav .me-auto .mb-2 .mb-lg-0 .left-side-nav-emp-head {
+        margin-left: 66px !important;
+    }
+
+
+        .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right:0px !important;
+        }
+    
+}
+
+.navbar-brand.d-flex.align-items-center{
+    z-index: 999;
+}
+
+/* new 25-06-2025 new posting_header.php style end   */

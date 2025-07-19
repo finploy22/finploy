@@ -1,0 +1,190 @@
+.job-posting-form-title {
+    color: var(--Deeesha-Blue, #175DA8);
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.form-label{
+color: #187B11;
+font-family: Poppins;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+input::placeholder,
+textarea::placeholder {
+ color: #888 !important;
+font-family: Poppins;
+font-size: 13px;
+font-style: normal !important;
+font-weight: 400 !important;
+line-height: normal !important;
+text-transform: capitalize !important;
+}
+.form-select {
+color: #888 !important;
+font-family: Poppins!important;
+font-size: 13px !important;
+font-style: normal!important;
+font-weight: 500!important;
+line-height: normal!important;
+text-transform: capitalize!important;
+}
+.ql-container  {
+ border-top:none;
+ border-left: 0.373px solid #747474 !important;
+  border-bottom: 0.373px solid #747474 !important;
+  border-right: 0.373px solid #747474 !important;
+background: #FFF!important;
+ border-bottom-left-radius: 8px !important;  /* only bottom radius */
+ border-bottom-right-radius:8px !important;
+}
+.ql-toolbar {
+ border-top-left-radius: 8px !important;      /* no top radius */
+border-top-right-radius: 8px !important;
+border: 0.373px solid #747474 !important;
+
+background: #FFF!important;
+}
+.status-active {
+height: 38px;
+color: #187B11 !important;
+leading-trim: both!important;
+text-edge: cap !important;
+font-family: Poppins !important;
+font-size: 14px !important;
+font-style: normal !important;
+font-weight: 600 !important;
+line-height: normal !important;
+}
+.gender {
+    height: 38px;
+    color: #888 !important;
+font-family: Poppins!important;
+font-size: 13px !important;
+font-style: normal!important;
+font-weight: 500!important;
+line-height: normal!important;
+text-transform: capitalize!important;
+ }
+.Department {
+     height: 38px;
+     color: #888 !important;
+font-family: Poppins!important;
+font-size: 13px !important;
+font-style: normal!important;
+font-weight: 500!important;
+line-height: normal!important;
+text-transform: capitalize!important;
+ }
+.Product {
+    height: 38px;
+    color: #888 !important;
+font-family: Poppins!important;
+font-size: 13px !important;
+font-style: normal!important;
+font-weight: 500!important;
+line-height: normal!important;
+text-transform: capitalize!important;
+}
+/* Job-Description*/
+
+
+/*.form-posting {*/
+/*background: #FFF;*/
+/*box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.24);*/
+/*}*/
+
+ .left-text {
+     color: var(--Deeesha-Blue, #175DA8);
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+    }
+
+.help-text {
+ color: var(--Deeesha-Blue, #175DA8);
+leading-trim: both;
+text-edge: cap;
+font-family: Poppins;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.close-icon {
+ color: red;
+ font-size: 20px;
+ font-weight: bold;
+ cursor: pointer;
+}
+.post-job-btn {
+    color: #FFF !important;
+font-family: Poppins !important;
+font-size: 18px !important;
+font-style: normal !important;
+font-weight: 600 !important;
+line-height: normal !important;
+    border-radius: 12px !important;
+background: #187B11 !important;
+box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.24);
+}
+.to-age {
+   color: #888;
+font-family: Poppins;
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: capitalize; 
+}
+.to-salary {
+       color: #888;
+font-family: Poppins;
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: capitalize;
+}
+.text-active {
+    color: #666;
+leading-trim: both;
+text-edge: cap;
+font-family: Poppins;
+font-size: 14px;
+font-style: italic;
+font-weight: 600;
+line-height: normal;
+}
+.main-div-posting-job {
+  background-image: url('../image/bg-image.png');
+  background-attachment: fixed;
+  background-size: cover; /* or contain, depending on your preference */
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 1px;
+  padding-bottom: 80px;
+}
+
+
+
+.form-posting {
+/*opacity: 0.7;*/
+  background: #FFF;
+box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.24);
+	border-radius: 12px !important;
+	    background: rgba(255, 255, 255, 0.47);
+
+}
+
+.footer {
+	margin-top: 0px !important;
+
+}
+

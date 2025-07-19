@@ -1,0 +1,224 @@
+/* 20-06-2025 /footer.php style  */
+.footer {
+    background-color: #CBDDF6;
+    color: #000;
+}
+
+.address-details {
+    font-size: 14px;
+    margin-top: 10px;
+    line-height: 25px;
+    max-width: 430px;
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.address-details .icon-wrap {
+    flex-shrink: 0;
+    margin-top: 0px;
+}
+
+.address-details .text-wrap {
+    flex: 1;
+}
+
+.follow-p {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    color: #000;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+.row-box {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.knowus-link-div,
+.product-link-div,
+.about-link-div {
+    margin-top: 60px;
+}
+
+.content-div {
+    margin-top: 20px;
+}
+
+.content-div-mobile {
+    margin-top: 20px;
+}
+
+.link-wa_call {
+    display: flex;
+    gap: 15px;
+}
+
+.list-group-item {
+    position: static;
+}
+
+.list-group-item {
+    position: static;
+}
+
+/* 20-06-2025 /footer.php style End */
+
+
+
+@media (max-width: 575.98px) {
+
+    /* footer.php style  */
+    .content-div {
+        display: none;
+    }
+
+    .content-div-mobile {
+        display: block !important;
+    }
+
+    .row-box {
+        display: block;
+    }
+
+    .footer h5 {
+
+        margin-bottom: 13px;
+    }
+
+    .knowus-link-div,
+    .product-link-div,
+    .about-link-div {
+        padding-top: 20px;
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    .content-div-mobile {
+        text-align: center;
+    }
+
+    .social-icons {
+
+        justify-content: center;
+    }
+
+    .address-details {
+        display: block;
+        max-width: none;
+    }
+
+    .copyrights {
+        text-align: center;
+    }
+
+    .hr-line {
+        margin: 6px auto !important;
+    }
+
+    .link-wa_call {
+        justify-content: center;
+    }
+
+
+}
+
+
+/* Small devices (large phones) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+
+
+
+    /* footer.php style  */
+    .content-div {
+        display: none;
+    }
+
+    .content-div-mobile {
+        display: block !important;
+    }
+
+    .row-box {
+        display: block;
+    }
+
+    .footer h5 {
+
+        margin-bottom: 13px;
+    }
+
+    .knowus-link-div,
+    .product-link-div,
+    .about-link-div {
+        padding-top: 20px;
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    .content-div-mobile {
+        text-align: center;
+    }
+
+    .social-icons {
+
+        justify-content: center;
+    }
+
+    .address-details {
+        display: block;
+        max-width: none;
+    }
+
+    .copyrights {
+        text-align: center;
+    }
+
+    .hr-line {
+        margin: 6px auto !important;
+    }
+
+    .link-wa_call {
+        justify-content: center;
+    }
+}
+
+
+.list-group-item {
+    background-color: #CBDDF6 !important;
+}
+
+.footer h5 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.footer a {
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 8px;
+    display: block;
+    font-size: 14px;
+}
+
+.footer a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+ .social-icons {
+        gap: 5px !important;
+    }

@@ -1,0 +1,94 @@
+# RewriteEngine On
+
+
+
+
+# php_flag display_errors On
+# php_value error_reporting 32767
+
+# -----------------------------------------
+# Finploy – Optimized .htaccess for SEO & Canonical
+# -----------------------------------------
+
+RewriteEngine On
+
+# 1. Force HTTPS and non-www together
+# RewriteCond %{HTTPS} off [OR]
+# RewriteCond %{HTTP_HOST} !^www\.finploy\.com$ [NC]
+# RewriteRule ^(.*)$ https://finploy.co.uk/$1 [R=301,L]
+# RewriteRule ^(.*)$ https://www.finploy.com/$1 [R=301,L]
+
+RewriteRule ^jobs-in-([a-zA-Z0-9-]+)$ index.php?seo_city=$1 [L,QSA]
+RewriteRule ^hire-in-([a-zA-Z0-9-]+)$ employer_flow/employer.php?seo_city=$1 [L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?route=$1 [L,QSA]
+
+# Disable directory listing
+Options -Indexes
+
+# Redirect /index.html to root for canonical consistency
+RewriteCond %{THE_REQUEST} /index\.html [NC]
+# RewriteRule ^index\.html$ https://finploy.co.uk/ [R=301,L]
+RewriteRule ^index\.html$ https://www.finploy.com/ [R=301,L]
+
+Redirect gone /setlanguage/
+Redirect gone /jobs/
+Redirect gone /users/
+
+# 1. Redirect /setlanguage/* URLs to homepage or jobs listing
+RewriteCond %{REQUEST_URI} ^/setlanguage/ [NC]
+RewriteRule ^.*$ https://www.finploy.com/ [R=301,L]
+
+# 1. Redirect /jobs/* URLs to homepage or jobs listing
+RewriteCond %{REQUEST_URI} ^/jobs/ [NC]
+RewriteRule ^.*$ https://www.finploy.com/ [R=301,L]
+
+# 2. Redirect all .html pages to homepage or a new PHP equivalent (optional)
+RewriteRule ^(.+)\.html$ https://www.finploy.com/ [R=301,L]
+
+# 3. Specific pages redirect (optional, for important pages)
+Redirect 301 /faq.html https://www.finploy.com/about
+Redirect 301 /alerts/add https://www.finploy.com/jobs/listing
+Redirect 301 /sitemap.html https://www.finploy.com/sitemaps.xml
+
+# Enable caching for better performance
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpg "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType text/html "access plus 1 week"
+  ExpiresByType application/pdf "access plus 1 month"
+  ExpiresByType text/javascript "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType application/x-javascript "access plus 1 month"
+</IfModule>
+
+# Enable gzip compression (faster loading)
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/plain
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/xml
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE application/xhtml+xml
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/x-javascript
+</IfModule>
+
+# Prevent access to hidden files (.htaccess, .env, etc.)
+<FilesMatch "^\.">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
+
+# Security headers (optional)
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set X-XSS-Protection "1; mode=block"
+</IfModule>

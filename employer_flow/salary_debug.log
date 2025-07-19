@@ -1,0 +1,40 @@
+Min: 1, Max: 
+SQL WHERE: NOT EXISTS (
+    SELECT 1 
+    FROM order_items oi
+    INNER JOIN payments p ON oi.payment_id = p.id
+    WHERE oi.candidate_id = candidate_details.id 
+      AND p.employer_id = 12
+      AND p.buyed_status = 0
+)
+
+Min: 1, Max: 
+SQL WHERE: NOT EXISTS (
+    SELECT 1 
+    FROM order_items oi
+    INNER JOIN payments p ON oi.payment_id = p.id
+    WHERE oi.candidate_id = candidate_details.id 
+      AND p.employer_id = 12
+      AND p.buyed_status = 0
+)
+
+Min: 1, Max: 2
+SQL WHERE: NOT EXISTS (
+    SELECT 1 
+    FROM order_items oi
+    INNER JOIN payments p ON oi.payment_id = p.id
+    WHERE oi.candidate_id = candidate_details.id 
+      AND p.employer_id = 12
+      AND p.buyed_status = 0
+)
+
+Min: 1, Max: 2
+SQL WHERE: NOT EXISTS (
+    SELECT 1 
+    FROM order_items oi
+    INNER JOIN payments p ON oi.payment_id = p.id
+    WHERE oi.candidate_id = candidate_details.id 
+      AND p.employer_id = 12
+      AND p.buyed_status = 0
+)
+

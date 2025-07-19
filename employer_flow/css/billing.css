@@ -1,0 +1,394 @@
+
+.page-title {
+      color: #175DA8;
+      font-family: 'Poppins';
+      font-size: 24px;
+      font-weight: 600;
+    }
+    .badge-success {
+      background-color: #d4edda;
+      color: #155724;
+    }
+    .badge,
+    .status-badge {
+        margin-left: 2px !important;
+        padding: 5px 10px !important;
+        border:none;
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .not-verified{
+        color: #E50000 !important;
+        font-family: 'Poppins';
+        font-size: 14px;
+        font-weight: 600;
+        background: transparent !important;
+    }
+    .badge-pending {
+      background: #FFF3B8 !important;
+      color: #4D4000 !important;;
+    }
+    .badge-failed {
+      background: #FFB8B8 !important;
+      color: #4D4000 !important;;
+    }
+    .badge-success {
+      background: #CCFFB9 !important;
+      color: #4D4000 !important;;
+    }
+    .subscription-bar {
+      height: 8px;
+      border-radius: 10px;
+      background-color: #d1e7dd;
+    }
+    .subscription-bar-inner {
+      height: 100%;
+      border-radius: 10px;
+      background-color: #198754;
+    }
+    .carousel-item {
+      padding: 1rem;
+    }
+    .billing-card-title {
+        color: #175DA8 !important;
+        font-family: 'Poppins';
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .upgrade-details {
+        border: 1px solid #175DA8 !important;
+        color: #175DA8 !important;
+    }
+    .upgrade-details:hover {
+        border: 1px solid #175DA8 !important;
+        color: #fff !important;
+    }
+    .action-btns{
+        background: #E5F2FF !important;
+        color: #175DA8 !important;
+        font-family: 'Poppins';
+        font-size: 14px;
+        font-weight: 500;
+        padding: 5px 20px !important;
+    }
+    .action-btns.active{
+        background: #175DA8 !important;
+        color: #fff !important;
+    }
+    thead tr th {
+        color: #232323 !important;
+        font-family: 'Poppins';
+        font-size: 14px;
+        font-weight: 500;
+    }
+    tbody tr td{
+        color: #888 !important;
+        font-family: 'Poppins';
+        font-size: 13px;
+        font-weight: 500;
+    }
+    tbody tr:hover {
+        background: #fff !important;
+    }
+    table {
+        border-collapse: collapse !important;
+        border-top: 1px solid #B3B3B3 !important;
+        border-bottom: 1px solid #B3B3B3 !important;
+    }
+    
+    table td,
+    table th {
+        border: none !important;
+    }
+    /* Progress Bar */
+    .progress-bar {
+        width: 100%;
+        background: #e0e0e0;
+        height: 6px;
+        border-radius: 3px;
+        margin: 10px 0;
+    }
+
+    .progress-fill {
+        height: 100%;
+        background: #4CAF50;
+        border-radius: 3px;
+    }
+    /* Additional Styles */
+    .page-title {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .billing-card-title {
+      font-weight: 600;
+      color: #333;
+    }
+
+    .bag-icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    .progress-bar {
+      background-color: #e9ecef;
+      border-radius: 5px;
+      height: 8px;
+      margin: 10px 0;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      background-color: #0d6efd;
+      height: 100%;
+      border-radius: 5px;
+      transition: width 0.3s ease;
+    }
+
+    .credits-info {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .used-credit {
+      color: #6c757d;
+    }
+
+    .remaining-credit {
+      color: #0d6efd;
+      font-weight: 500;
+    }
+
+    .not-verified {
+      background-color: #f8d7da;
+      color: #721c24;
+      padding: 2px 8px;
+    }
+
+    .status-badge {
+      padding: 5px 10px;
+      border: none;
+      font-weight: normal;
+    }
+
+    .badge-success {
+      background-color: #d1e7dd;
+      color: #0f5132;
+    }
+
+    .badge-failed {
+      background-color: #f8d7da;
+      color: #721c24;
+    }
+
+    .badge-pending {
+      background-color: #fff3cd;
+      color: #856404;
+    }
+
+    .action-btns {
+      border-radius: 5px;
+      font-size: 0.875rem;
+    }
+
+    .action-btns.active {
+      font-weight: 500;
+    }
+    
+    /* Custom Pagination */
+    .pagination-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+    }
+    
+    .pagination-controls {
+      display: flex;
+      align-items: center;
+    }
+    
+    .pagination-controls button {
+      border: 1px solid #dee2e6;
+      background-color: #fff;
+      color: #0d6efd;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 3px;
+      border-radius: 4px;
+    }
+    
+    .pagination-controls button:hover:not(:disabled) {
+      background-color: #e9ecef;
+    }
+    
+    .pagination-controls button:disabled {
+      color: #6c757d;
+      cursor: not-allowed;
+    }
+    
+    .pagination-info {
+      color: #6c757d;
+      font-size: 14px;
+      margin: 0 10px;
+    }
+    
+    .per-page-select {
+      display: flex;
+      align-items: center;
+    }
+    
+    .per-page-select select {
+      border: 1px solid #dee2e6;
+      border-radius: 4px;
+      padding: 0.25rem;
+      margin-left: 8px;
+      width: 60px;
+    }
+
+    /* Subscription Card */
+    .job-plan-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+    
+    /* Table Styles */
+    table.table {
+      margin-bottom: 0;
+    }
+    
+    table.table thead th {
+      background-color: #f8f9fa;
+      border-bottom-width: 1px;
+      font-weight: 600;
+      color: #495057;
+    }
+    
+    table.table td, table.table th {
+      padding: 12px 15px;
+      vertical-align: middle;
+    }
+    
+    /* Active Subscription Plan */
+    .plan-badge {
+      background-color: #e7f5ff;
+      color: #0d6efd;
+      font-size: 0.8rem;
+      padding: 4px 10px;
+      border-radius: 20px;
+      margin-left: 10px;
+    }
+      /* Carousel Styles */
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: rgba(0,0,0,0.2);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000;
+  }
+  
+  .carousel-indicators {
+    margin-bottom: 0;
+  }
+  
+  .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #dee2e6;
+    opacity: 0.5;
+  }
+  
+  .carousel-indicators button.active {
+    background-color: #0d6efd;
+    opacity: 1;
+  }
+  
+  .plan-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #e7f5ff;
+    color: #0d6efd;
+    font-size: 0.8rem;
+    padding: 4px 10px;
+    border-radius: 20px;
+    z-index: 2;
+  }
+  .carousel-control-prev-icon{
+     color: #000;
+  }
+  .next-upgrade{
+      color: #747474;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .gst-modal {
+    display: none;
+    position: fixed;
+    top: 6%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    z-index: 1000;
+  }
+
+  .gst-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000099;
+    z-index: 999;
+  }
+  
+  /* Custom styles for black carousel controls */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: #000;
+      border-radius: 50%;
+      padding: 10px;
+    }
+    
+    /* For better visibility against different backgrounds */
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 5%;
+      opacity: 0.8;
+    }
+    
+    /* Add active styling for filter buttons */
+    .action-btns.active {
+      font-weight: bold;
+    }
+    
+    /* Add loading spinner style */
+    .loading-spinner {
+      display: none;
+      text-align: center;
+      padding: 20px;
+    }
+    .upgrade-plan{
+        color: #175DA8;
+    }
+    .upgrade-plan:hover {
+        color: #fff;
+    }
+    
