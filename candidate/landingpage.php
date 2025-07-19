@@ -2,7 +2,7 @@
 require '../session.php';
 // include '../employer_flow/posting_header.php';
 // include '../header.php';
-
+include 'header.php';
 include '../db/connection.php';
 
 $user_type = is_logged_in();
@@ -111,7 +111,6 @@ if (!$all_data_isthere) {
     header("Location: index.php");
     exit();
 }
-include 'header.php';
 ?>
 <style>
     .divider {
@@ -212,6 +211,31 @@ include 'header.php';
                     </div>
                 </div>
                 <hr class="filter-line">
+                                    <!-- gender reveal -->
+                     <div id="keyword-badges-gender" class="mb-2 keyword-badges-filter"></div>
+                    <div class="filter-div-gender">
+                        <h6 class="filter-accordion">Gender<img class="accordion-arrow"
+                                src="assets/downward-arrow.svg" alt="Toggle Arrow"></h6>
+                        <div class="filter-content active">
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="gender-male" name="gender" data-name="Male"
+                                    value="Male">
+                                <label class="filter-lable" for="gender-male">Male</label>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="gender-Female" name="gender" data-name="Female"
+                                    value="Female">
+                                <label class="filter-lable" for="gender-Female">Female</label>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="gender-both" name="gender" data-name="Both"
+                                    value="Both">
+                                <label class="filter-lable" for="gender-both">Both</label>
+                            </div>
+                        </div>
+                    </div>  
+                    <hr class="filter-line">
+
                 <!-- Department Filter (Updated) -->
                 <div id="keyword-badges-department" class="mb-2 keyword-badges-filter"></div>
                 <div class="mb-3 filter-div">
@@ -415,6 +439,23 @@ include 'header.php';
                     <div class="input-group">
                         <input type="number" id="min_salary" class="form-control" placeholder="Min">
                         <input type="number" id="max_salary" class="form-control" placeholder="Max">
+                    </div>
+                </div>
+                <!-- age -->
+                <hr class="filter-line">
+                 <div class="mb-3 filter-div">
+                    <h6>Age (In yrs)</h6>
+                    <div class="input-group">
+                        <input type="number" id="min_age" class="form-control" placeholder="Min">
+                        <input type="number" id="max_age" class="form-control" placeholder="Max">
+                    </div>
+                </div>
+                <!-- exp -->
+                 <hr class="filter-line">
+                 <div class="mb-3 filter-div">
+                    <h6>Experience (In yrs)</h6>
+                    <div class="input-group">
+                        <input type="number" id="min_exp" class="form-control" placeholder="Min">
                     </div>
                 </div>
             </div>
@@ -2081,6 +2122,16 @@ include 'header.php';
         if (minSalaryValue) filters.min_salary = minSalaryValue;
         if (maxSalaryValue) filters.max_salary = maxSalaryValue;
 
+        // age range
+        const minAge = $('#min_age').val();
+        const maxAge = $('#max_age').val();
+        if (minAge) filters.min_age = minAge;
+        if (maxAge) filters.max_age = maxAge;
+        
+        // exp
+        const minExp = $('#min_exp').val();
+        if (minExp) filters.min_exp = minExp;
+
         // Search term
         const searchValue = $('#search').val() || $('#searchjob').val();
         if (searchValue) filters.search = searchValue;
@@ -2148,6 +2199,21 @@ include 'header.php';
         }
         fetchFilteredJobs(1);
     });
+        // age
+        $('#min_age, #max_age').on('input', function () {
+            clearTimeout($(this).data('timeout'));
+            $(this).data('timeout', setTimeout(function () {
+                fetchFilteredJobs(1);
+            }, 500));
+        });
+        
+        // exp
+        $('#min_exp').on('input', function () {
+            clearTimeout($(this).data('timeout'));
+            $(this).data('timeout', setTimeout(function () {
+                fetchFilteredJobs(1);
+            }, 500));
+        });
     // ------------End Function to add a keyword badge And Remove bage ----------------
 
     //------------ Fetch searched location and Filter useing location -----------------
@@ -2373,6 +2439,17 @@ include 'header.php';
     // ------------ End Fetch selected values -----------
 
     // ----------- Deparments Products Sub Products,Departments Filter -------
+    $(document).on('change', 'input[name="gender"]', function () {
+    const label = $(this).data('name');
+    if (this.checked) {
+        addBadge(this.value, "gender", label);
+    } else {
+        removeBadge(this.value, "gender", label);
+    }
+    fetchFilteredJobs(1);
+});
+
+
     $(document).on('change', 'input[name="department"]', function () {
         const label = $(this).data('name');
         if (this.checked) {

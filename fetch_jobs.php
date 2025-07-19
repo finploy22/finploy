@@ -51,6 +51,9 @@ $filters = [
   'location' => $_POST['location'] ?? '',
   'min_salary' => $_POST['min_salary'] ?? '',
   'max_salary' => $_POST['max_salary'] ?? '',
+  'min_age' => $_POST['min_age'] ?? '',
+  'max_age' => $_POST['max_age'] ?? '',
+  'min_exp' => $_POST['min_exp'] ?? '',
   'departments' => $_POST['department'] ?? [],
   'sub_departments' => $_POST['subdepartment'] ?? [],
   'categorys' => $_POST['category'] ?? [],
@@ -67,7 +70,7 @@ $filters = [
   'sub_product_m' => $_POST['subproduct_m'] ?? '',
   'specialization_m' => $_POST['specialization_m'] ?? '',
   'companyname' => $_POST['companyname'] ?? '',
-
+  'genders' => $_POST['gender'] ?? [],
 ];
 
 
@@ -153,10 +156,34 @@ if ($jobidurl > 0) {
   if (!empty($filters['max_salary'])) {
     $query .= " AND salary <= " . intval($filters['max_salary']);
   }
+  // age
+  if (!empty($filters['min_age'])) {
+    $query .= " AND age >= " . intval($filters['min_age']);
+  }
+
+  if (!empty($filters['max_age'])) {
+    $query .= " AND age <= " . intval($filters['max_age']);
+  }
+  // exp
+    if (!empty($filters['min_exp'])) {
+    $query .= " AND experience >= " . intval($filters['min_exp']);
+  }
+
+  if (!empty($filters['max_exp'])) {
+    $query .= " AND experience <= " . intval($filters['max_exp']);
+  }
+
 
   if (!empty($filters['departments']) && is_array($filters['departments'])) {
     $safe = array_map('intval', $filters['departments']);
     $query .= " AND department IN (" . implode(",", $safe) . ")";
+  }
+  // gender
+  if (!empty($filters['genders']) && is_array($filters['genders'])) {
+      $safe = array_map(function($g) use ($conn) {
+          return "'" . mysqli_real_escape_string($conn, $g) . "'";
+      }, $filters['genders']);
+      $query .= " AND gender IN (" . implode(",", $safe) . ")";
   }
 
   if (!empty($filters['sub_departments']) && is_array($filters['sub_departments'])) {

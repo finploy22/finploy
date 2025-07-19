@@ -91,6 +91,7 @@
         // Remove the existing click handler to avoid duplication
 
         $(document).off('click', '#apply-job-btn, #job-apply-btn,#share-job-btn');
+            // sakthi
         $(document).on('click',"#share-job-btn",function(){
             const baseUrl="http://localhost/";
             console.log("test");
@@ -234,7 +235,7 @@
         // Add click handler for refer-candidate button
         $(document).on("click", "#candidate-as-partner, #candidate-to-partner", function(e) {
             e.stopPropagation(); 
-            e.stopImmediatePropagation(); //sakthi
+            e.stopImmediatePropagation(); 
             var jobCard = $(this).closest(".job-card");
             var jobId = jobCard.find(".job-grid").attr("data-id");
 
