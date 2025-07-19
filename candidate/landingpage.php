@@ -2,7 +2,7 @@
 require '../session.php';
 // include '../employer_flow/posting_header.php';
 // include '../header.php';
-include 'header.php';
+
 include '../db/connection.php';
 
 $user_type = is_logged_in();
@@ -111,6 +111,7 @@ if (!$all_data_isthere) {
     header("Location: index.php");
     exit();
 }
+include 'header.php';
 ?>
 <style>
     .divider {
