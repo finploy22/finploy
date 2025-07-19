@@ -1335,7 +1335,7 @@ tr {
     }
 
     .navbar-nav.me-auto.mb-2.mb-lg-0.left-side-nav {
-        float: left !important;
+        /* float: left !important; */
         margin: 20px -5px !important;
     }
 

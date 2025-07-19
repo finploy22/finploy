@@ -1197,6 +1197,11 @@ select.classic {
 
 .filter-div-sort {
     margin-top: 8px;
+    margin-bottom: -2px !important; 
+}
+/* sakthi */
+.filter-div-gender {
+    margin-top: 8px;
     margin-bottom: -2px !important;
 }
 

@@ -200,6 +200,15 @@ function collectFilters() {
     if (minSalaryValue) filters.min_salary = minSalaryValue;
     if (maxSalaryValue) filters.max_salary = maxSalaryValue;
 
+    // age range
+    const minAge = $('#min_age').val();
+    const maxAge = $('#max_age').val();
+    if (minAge) filters.min_age = minAge;
+    if (maxAge) filters.max_age = maxAge;
+    // exp
+    const minExp = $('#min_exp').val();
+    if (minExp) filters.min_exp = minExp;
+    
     // Search term
     const searchValue = $('#search').val() || $('#searchjob').val();
     if (searchValue) filters.search = searchValue;
@@ -484,6 +493,31 @@ $(document).on("click", function (event) {
     }
 });
 //------------ End Fetch searched designation For Mobile -----------------
+// gender
+// $(document).on('change', 'input[name="gender"]', function () {
+//     let selectedGenders = $('input[name="gender"]:checked').map(function () {
+//         return $(this).val();
+//     }).get();
+//     let label = $(this).data('name');
+//     if (this.checked) {
+//         console.log(this.value);
+//         addBadge(this.value, "gender", label);
+//     } else {
+//         removeBadge(this.value, "gender", label)
+//     }
+//     fetchFilteredJobs(1);
+// });
+
+// add badge for gener sakthi
+$(document).on('change', 'input[name="gender"]', function () {
+    const label = $(this).data('name');
+    if (this.checked) {
+        addBadge(this.value, "gender", label);
+    } else {
+        removeBadge(this.value, "gender", label);
+    }
+    fetchFilteredJobs(1);
+});
 
 
 
@@ -641,6 +675,20 @@ $(document).ready(function () {
     });
 
     $('#min_salary, #max_salary, #jobmin_salary, #jobmax_salary').on('input', function () {
+        clearTimeout($(this).data('timeout'));
+        $(this).data('timeout', setTimeout(function () {
+            fetchFilteredJobs(1);
+        }, 500));
+    });
+    // age
+     $('#min_age, #max_age').on('input', function () {
+        clearTimeout($(this).data('timeout'));
+        $(this).data('timeout', setTimeout(function () {
+            fetchFilteredJobs(1);
+        }, 500));
+    });
+    // exp
+     $('#min_exp').on('input', function () {
         clearTimeout($(this).data('timeout'));
         $(this).data('timeout', setTimeout(function () {
             fetchFilteredJobs(1);

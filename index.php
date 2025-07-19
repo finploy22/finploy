@@ -22,6 +22,7 @@ if ($seo_city) {
         $seolocation_id = $row['id'];
     }
 }
+
 // designation,companyname,department,sub-department,product....
 $seo_url = $_GET['route'] ?? null;
 
@@ -240,6 +241,32 @@ $job_id = isset($_GET['job_id']) ? intval($_GET['job_id']) : 0;
                         </div>
                     </div>
                     <hr class="filter-line">
+
+                    <!-- gender reveal -->
+                     <div id="keyword-badges-gender" class="mb-2 keyword-badges-filter"></div>
+                    <div class="filter-div-gender">
+                        <h6 class="filter-accordion">Gender<img class="accordion-arrow"
+                                src="assets/downward-arrow.svg" alt="Toggle Arrow"></h6>
+                        <div class="filter-content active">
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="gender-male" name="gender" data-name="Male"
+                                    value="Male">
+                                <label class="filter-lable" for="gender-male">Male</label>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="gender-Female" name="gender" data-name="Female"
+                                    value="Female">
+                                <label class="filter-lable" for="gender-Female">Female</label>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" id="gender-both" name="gender" data-name="Both"
+                                    value="Both">
+                                <label class="filter-lable" for="gender-both">Both</label>
+                            </div>
+                        </div>
+                    </div>  
+                    <hr class="filter-line">
+
                     <!-- Department Filter -->
                     <div id="keyword-badges-department" class="mb-2 keyword-badges-filter"></div>
                     <div class="mb-3 filter-div">
@@ -423,6 +450,23 @@ $job_id = isset($_GET['job_id']) ? intval($_GET['job_id']) : 0;
                         <div class="input-group">
                             <input type="number" id="min_salary" class="form-control" placeholder="Min">
                             <input type="number" id="max_salary" class="form-control" placeholder="Max">
+                        </div>
+                    </div>
+                    <!-- age -->
+                    <hr class="filter-line">
+                     <div class="mb-3 filter-div">
+                        <h6>Age (In yrs)</h6>
+                        <div class="input-group">
+                            <input type="number" id="min_age" class="form-control" placeholder="Min">
+                            <input type="number" id="max_age" class="form-control" placeholder="Max">
+                        </div>
+                    </div>
+                    <!-- exp -->
+                     <hr class="filter-line">
+                     <div class="mb-3 filter-div">
+                        <h6>Experience (In yrs)</h6>
+                        <div class="input-group">
+                            <input type="number" id="min_exp" class="form-control" placeholder="Min">
                         </div>
                     </div>
                 </div>
